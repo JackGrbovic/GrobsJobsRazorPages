@@ -286,3 +286,4 @@
 /Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/obj/Debug/net8.0/ref/GrobsJobsRazorPages.dll
 /Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/bin/Debug/net8.0/FluentValidation.dll
 /Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/bin/Debug/net8.0/Microsoft.Web.UI.WebControls.dll
+/Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/obj/Debug/net8.0/GrobsJobsRazorPages.sourcelink.json

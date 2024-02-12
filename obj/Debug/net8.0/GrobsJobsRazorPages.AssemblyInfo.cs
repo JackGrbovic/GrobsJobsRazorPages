@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GrobsJobsRazorPages")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39760670631221c868626f6277cd0d5176a762ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("GrobsJobsRazorPages")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GrobsJobsRazorPages")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
