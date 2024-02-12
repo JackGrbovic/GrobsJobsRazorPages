@@ -1,0 +1,39 @@
+﻿@page
+@model GrobsJobsRazorPages.Pages.UserPages.StartMessageThreadModel;
+@{
+}
+
+<div style="display: flex; justify-content: center;">
+    <div style="display: flex-wrap; width: 70%;">
+        <form method="post" asp-route-secondPartyId="@Model.SecondParty.Id">
+            <div class="border p-3 mt-4" style="border-radius: 10px;">
+                <div class="row pb-2">
+                    <h2 class="text-primary pl-3">Start a Message Thread</h2>
+                    <hr />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="MessageToSend.MessageRecipient"></label>
+                    <input asp-for="MessageToSend.MessageRecipient" class="form-control" value="@Model.RecipientName"/>
+                    <span asp-validation-for="MessageToSend.MessageRecipient" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="MessageToSend.MessageTitle">
+                        
+                    </label>
+                    <input asp-for="MessageToSend.MessageTitle" class="form-control" value="Re: @Model.JobName" />
+                    <span asp-validation-for="MessageToSend.MessageTitle" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <div class="form-group">
+                        <label asp-for="MessageToSend.MessageBody" for="exampleTextarea" class="form-label" style="margin-top: 0px;">New Message</label>
+                        <textarea asp-for="MessageToSend.MessageBody" class="form-control" id="exampleTextarea" rows="3"></textarea>
+                    </div>
+                    <span asp-validation-for="MessageToSend.MessageBody" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:150px;">Create</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+

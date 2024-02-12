@@ -1,0 +1,14 @@
+﻿@page
+@model GrobsJobsRazorPages.Pages.UserPages.MyJobsModel
+@{
+}
+
+@if(Model.UserIsAuthenticated)
+{
+    @await Html.PartialAsync("_JobList", Model._JobListController)
+    @await Html.PartialAsync("_JobListPagination", Model._JobListController)
+}
+else
+{
+    <p style="color:red">No user is logged in. Please log in to view this page.</p>
+}

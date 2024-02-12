@@ -1,0 +1,115 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = GrobsJobsRazorPages
+build_property.RootNamespace = GrobsJobsRazorPages
+build_property.ProjectDir = /Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/Pages/JobPages/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSm9iUGFnZXMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/Pages/JobPages/EditJob.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSm9iUGFnZXMvRWRpdEpvYi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/Pages/JobPages/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSm9iUGFnZXMvU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/Pages/JobPages/ViewJob.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSm9iUGFnZXMvVmlld0pvYi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/Pages/Shared/_JobList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19Kb2JMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/Pages/Shared/_JobListPagination.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19Kb2JMaXN0UGFnaW5hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/Pages/Shared/_SearchBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19TZWFyY2hCYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/Pages/UserPages/Inbox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlclBhZ2VzL0luYm94LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/Pages/UserPages/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlclBhZ2VzL0xvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/Pages/UserPages/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlclBhZ2VzL0xvZ291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/Pages/UserPages/MessageThread.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlclBhZ2VzL01lc3NhZ2VUaHJlYWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/Pages/UserPages/MyJobs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlclBhZ2VzL015Sm9icy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/Pages/UserPages/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlclBhZ2VzL1JlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/Pages/UserPages/StartMessageThread.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlclBhZ2VzL1N0YXJ0TWVzc2FnZVRocmVhZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/Pages/UserPages/UserProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlclBhZ2VzL1VzZXJQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jackgrbovic/Documents/Work/Programming/GrobsJobsRazorPages/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-k4ziw9wna3

@@ -1,0 +1,51 @@
+﻿@page
+@using GrobsJobsRazorPages.Model;
+@model GrobsJobsRazorPages.Pages.UserPages.MessageThreadModel
+@{
+}
+
+<div style="display: flex; justify-content: center;">
+    <div style="display: flex-wrap; width: 70%">
+        @foreach (Message message in Model.SharedMessages)
+        {
+            if (message.MessageSender == Model.FirstParty.Id)
+            {
+                //display message highlighted in purple
+                <div class="border p-3 mt-4 bg-body" style="text-align:right; border-radius: 10px;">
+                    <div class="mb-3">
+                        <p style="color:mediumpurple">You:</p>
+                    </div>
+                    <div class="mb-3">
+                        <p>@message.MessageBody</p>
+                    </div>
+                </div>
+            }
+            else if (message.MessageSender == Model.SecondParty.Id)
+            {
+                //display message highlighted in seagreen
+                <div class="border p-3 mt-4 bg-light" style="text-align:left; border-radius: 10px;">
+                    <div class="mb-3">
+                        <p style="color:lightseagreen">@Model.SecondParty.NormalizedUserName</p>
+                    </div>
+                    <div class="mb-3">
+                        <p>@message.MessageBody</p>
+                    </div>
+                </div>
+            }
+        }
+
+        <form method="post">
+            <div class="border p-3" style="border-radius: 10px; margin-top: 10px;">
+                <div class="mb-3">
+                    <div class="form-group">
+                        <label asp-for="MessageToSend.MessageBody" for="exampleTextarea" class="form-label" style="margin-top: 0px;">New Message</label>
+                        <textarea asp-for="MessageToSend.MessageBody" class="form-control" id="exampleTextarea" rows="3"></textarea>
+                    </div>
+                    <span asp-validation-for="MessageToSend.MessageBody" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:150px;" asp-route-secondPartyId="@Model.SecondParty.Id">Send Message</button>
+            </div>
+        </form>
+
+    </div>
+</div>

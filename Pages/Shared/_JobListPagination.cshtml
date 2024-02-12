@@ -1,0 +1,19 @@
+<div style="display: flex; flex-direction: column; justify-content: center; width: 100%; align-items: center;">
+    <div style="display: flex; justify-content: center; width:70%"></div>
+        <ul class="pagination pagination-lg">
+            @for (int i = Model.PaginationNumbers[0]; i < Model.PaginationNumbers.Count + 1; i ++){
+                if (i == Model.PageNumber)
+                {
+                    <li class="page-item active">
+                        <a class="page-link" asp-page="@Model.Route" asp-route-pageNumber="@i">@i</a>
+                    </li>
+                }
+                else{
+                    <li class="page-item">
+                        <a class="page-link" asp-page="@Model.Route" asp-route-pageNumber="@i">@i</a>
+                    </li>
+                }
+            }
+        </ul>
+    </div>
+</div>

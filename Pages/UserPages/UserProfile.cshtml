@@ -1,0 +1,29 @@
+﻿@page
+@model GrobsJobsRazorPages.Pages.UserPages.UserProfileModel
+@{
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-sm-12 col-md-12 col-lg-4">
+            <h1 class="mb-3 text-primary pl-3">Your Profile</h1>
+            <hr />
+
+            <div class="mb-3">
+                <label class="form-label" asp-for="LoggedInUser.UserName">User Name: @Model.LoggedInUser.UserName</label>
+            </div>
+
+            <div class="mb-3">
+                <a asp-page="MyJobs">
+                    <button type="button" class="btn btn-primary" style="width:150px;">View Your Posts</button>
+                </a>
+            </div>
+
+            <div class="mb-3">
+                <a asp-page="Inbox">
+                    <button type="button" class="btn btn-primary" style="width:150px;">Inbox</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

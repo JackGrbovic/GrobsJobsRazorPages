@@ -1,0 +1,47 @@
+﻿@page
+@model GrobsJobsRazorPages.Pages.JobPages.CreateModel
+@if (Model.CreateJobErrorMessage == null){
+    <div style="display: flex; justify-content: center;">
+        <div style="display: flex-wrap; width: 70%;">
+            <form method="post">
+                <div class="border p-3 mt-4" style="border-radius: 10px;">
+                    <div class="row pb-2">
+                        <h2 class="text-primary pl-3">Create Job</h2>
+                        <hr />
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Job.Name"></label>
+                        <input asp-for="Job.Name" class="form-control" />
+                        <span asp-validation-for="Job.Name" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Job.Description"></label>
+                        <input asp-for="Job.Description" class="form-control" />
+                        <span asp-validation-for="Job.Description" class="text-danger"></span>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" asp-for="JobType" value="Help Needed" id="helpNeededRadioButton" name="JobType"/>
+                            <label asp-for="JobType" class="btn btn-outline-primary" for="helpNeededRadioButton">Help Needed</label>
+                            <input type="radio" class="btn-check" asp-for="JobType" value="Here To Help" id="hereToHelpRadioButton" name="JobType"/>
+                            <label asp-for="JobType" class="btn btn-outline-primary" for="hereToHelpRadioButton">Here To Help</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:150px;">Create</button>
+                    <br />
+                    <span asp-validation-for="JobType" class="text-danger"></span>
+                </div>
+            </form>
+
+
+            @section Scripts{
+                @{
+                    <partial name="_ValidationScriptsPartial"/>
+                }
+            }
+        </div>
+    </div>
+
+}
+else{
+    <p class="text-danger">@Model.CreateJobErrorMessage</p>
+}
+

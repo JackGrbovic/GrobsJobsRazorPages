@@ -1,0 +1,47 @@
+﻿@page
+@model GrobsJobsRazorPages.Pages.JobPages.EditJobModel
+
+@if (Model.EditJobErrorMessage == null){
+    <div style="display: flex; justify-content: center;">
+        <div style="width: 70%; display: flex-wrap;">
+            <form method="post">
+                <div class="border p-3 mt-4">
+                    <div class="row pb-2">
+                        <h2 class="text-primary pl-3">Edit Job</h2>
+                        <hr />
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Job.Name"></label>
+                        <input asp-for="Job.Name" class="form-control" />
+                        <span asp-validation-for="Job.Name" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Job.Description"></label>
+                        <input asp-for="Job.Description" class="form-control" />
+                        <span asp-validation-for="Job.Description" class="text-danger"></span>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" asp-for="JobType" value="Help Needed" id="helpNeededRadioButton" name="JobType"/>
+                            <label asp-for="JobType" class="btn btn-outline-primary" for="helpNeededRadioButton">Help Needed</label>
+                            <input type="radio" class="btn-check" asp-for="JobType" value="Here To Help" id="hereToHelpRadioButton" name="JobType"/>
+                            <label asp-for="JobType" class="btn btn-outline-primary" for="hereToHelpRadioButton">Here To Help</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:150px;" asp-page-handler="Update" asp-route-jobId="@Model.Job.Id"  value="Update Job">Update</button>
+                    <br />
+                    <span asp-validation-for="JobType" class="text-danger"></span> 
+                    <br />
+                    <button type="submit" class="btn btn-danger" style="width:150px;" asp-page-handler="Delete" asp-route-jobId="@Model.Job.Id" value="Delete Job">Delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @section Scripts{
+        @{
+            <partial name="_ValidationScriptsPartial"/>
+        }
+    }
+}
+else{
+    <p class="text-danger">@Model.EditJobErrorMessage</p>
+}

@@ -1,0 +1,43 @@
+<div style="display: flex; flex-direction: column; justify-content: center; width: 100%; align-items: center;">
+        @if (Model.Jobs.Count > 0){
+            @foreach (var obj in Model.Jobs)
+            {
+                <div class="@Model.JobClassName(obj.JobType)" style="display: flex; justify-content: center; width:70%">
+                    <div class="card-header">
+                        <div style="display: flex;">
+                            <div style="display: flex; justify-content: flex-start; width: 50%;">
+                                <h2 style="margin-bottom: 0px; color: white; font-size: 20px; text-decoration: none;">@obj.JobType</h2>
+                            </div>
+                            <div style="display: flex; justify-content: flex-end; width: 50%;">
+                                <p style="margin-bottom: 0px;">@obj.DateTimePosted</p>
+                            </div>
+                        </div>
+                        <p style="margin-top: 0px; margin-bottom: 0px;">@obj.JobPosterNormalizedUserName</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">@obj.Name</h4>
+                        <p class="card-text">
+                            @if (obj.Description.Length > 200)
+                            {
+                                string shortenedDescription = "";
+                                for (int i = 0; i < 200; i++)
+                                {
+                                    shortenedDescription += obj.Description[i];
+                                }
+                                shortenedDescription += "...";
+                                @shortenedDescription
+                            }
+                            else
+                            {
+                                @obj.Description
+                            }
+                        </p>
+                        <a asp-page="/JobPages/ViewJob" asp-route-id="@obj.Id" style="margin-bottom: 0px; color: white; font-size: 20px; text-decoration: none;">View Job</a>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+
+    @* We need to add pagination to the bottom of this. We also need to add logic for this file to tell the difference between
+    JobTypes *@

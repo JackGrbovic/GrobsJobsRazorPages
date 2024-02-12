@@ -1,0 +1,17 @@
+﻿@page
+@using GrobsJobsRazorPages.Model;
+@model GrobsJobsRazorPages.Pages.JobPages.SearchModel
+@{
+}
+
+
+@if (Model.noResults == false)
+{
+    @await Html.PartialAsync("_JobList", Model._JobListController)
+    @await Html.PartialAsync("_JobListPagination", Model._JobListController)
+}
+else
+{
+    <p style="font-size: 18px; color:red">The search returned no results. Please try a different query.</p>
+}
+

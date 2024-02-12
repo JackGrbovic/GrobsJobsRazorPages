@@ -1,0 +1,22 @@
+﻿@page
+@using GrobsJobsRazorPages.Pages.Shared
+@model GrobsJobsRazorPages.Pages.IndexModel
+
+<div style="display: flex; justify-content: center;">
+    <div class="border p-3 mt-4" style="display: flex-wrap; width: 70%; border-radius: 10px;">
+        <h1>Welcome to Grob's Jobs!</h1>
+        <hr />
+        <p>This is a website where you can make posts asking for help from others, or offer your services to the users of Grob's Jobs.
+            <br />
+            <br />If you wish to inquire after a job, you can message the poster about it and exchange further messages from there.
+            <br />Please be respectful to other users. Good luck!
+        </p>
+    </div>
+</div>
+<div style="display: flex; justify-content: center;">
+    <div style="display: flex-wrap; width: 70%; margin-top: 50px;">
+            <h2>All Jobs</h2>
+    </div>
+</div>
+@await Html.PartialAsync("_JobList", Model.JobListController)
+@await Html.PartialAsync("_JobListPagination", Model.JobListController)

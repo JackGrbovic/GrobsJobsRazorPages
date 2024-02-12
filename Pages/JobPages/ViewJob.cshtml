@@ -1,0 +1,36 @@
+﻿@page
+@model GrobsJobsRazorPages.Pages.JobPages.ViewJobModel
+
+<div style="display: flex; justify-content: center;">
+    <div style="display: flex-wrap; width: 70%;">
+        <div class="border p-3 mt-4" style="border-radius: 10px;">
+            <div class="row pb-0">
+                <h2 class="text-primary pl-3">@Model.Job.Name</h2>
+            </div>
+            <div class="row pb-2">
+                <p style="font-size:11px;color:black;">Posted by: @Model.Job.JobPosterNormalizedUserName on @Model.Job.DateTimePosted</p>
+                <hr />
+            </div>
+            <div class="mb-3">
+                <p>@Model.Job.Description</p>
+            </div>
+            @if (Model.AuthorizedToEdit)
+            {
+                <a asp-page="EditJob" asp-route-id="@Model.Job.Id">
+                    <button type="button" class="btn btn-primary" style="width:150px;">Edit Job</button>
+                </a>
+            }
+            @if (Model.AuthenticatedToMessageJobPoster)
+            {
+                <a asp-page="/UserPages/StartMessageThread" asp-route-jobName="@Model.Job.Name"  asp-route-recipientNormalizedUserName="@Model.Job.JobPosterNormalizedUserName">
+                    <button type="button" class="btn btn-primary" style="width:150px;">Inquire</button>
+                </a>
+            }
+        </div>
+    </div>
+</div>
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial"/>
+    }
+}
